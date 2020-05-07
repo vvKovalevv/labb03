@@ -40,6 +40,24 @@ find_minmax( const vector<double>& numbers, double& min, double& max)
         }
 
     }
+
+}
+
+
+    void
+svg_begin(double width, double height) {
+    cout << "<?xml version='1.0' encoding='UTF-8'?>\n";
+    cout << "<svg ";
+    cout << "width='" << width << "' ";
+    cout << "height='" << height << "' ";
+    cout << "viewBox='0 0 " << width << " " << height << "' ";
+    cout << "xmlns='http://www.w3.org/2000/svg'>\n";
+}
+
+void
+svg_end() {
+
+    cout << "</svg>\n";
 }
 vector<size_t>
 make_histogram(const vector <double> &numbers,double &max, double &min, size_t &bin_count)
@@ -61,69 +79,54 @@ make_histogram(const vector <double> &numbers,double &max, double &min, size_t &
     return bins;
 }
 
- void show_histogram_text( const vector <size_t> &bins)
+
+void svg_text(double left, double baseline, string text)
 {
-    size_t max_bin = bins[0];
-
-    for (size_t bin:bins)
-    {
-        if (bin > max_bin)
-        {
-
-            max_bin=bin;
-        }
-    }
-
-    if (max_bin > MAX_ASTERISK)
-    {
-        double factor = MAX_ASTERISK/static_cast<double>(max_bin);
-
-        for (size_t bin:bins)
-        {
-            if (bin <100)
-            {
-                cout <<" ";
-                if (bin < 10)
-                {
-                    cout <<" ";
-                }
-            }
-
-            cout <<bin <<"|";
-
-            size_t height = bin*factor;
-            for(int i=0; i<height; i++)
-            {
-                cout<< "";
-            }
-            cout<<endl;
-        }
-    }
-    else
-    {
-        for (size_t bin:bins)
-        {
-            if (bin <100)
-            {
-                cout <<" ";
-                if (bin < 10)
-                {
-                    cout <<" ";
-                }
-            }
-
-            cout <<bin <<"|";
-
-            for (int i = 0; i < bin; i++)
-            {
-                cout << "*";
-            }
-
-            cout<<endl;
-        }
-    }
-
+    cout << "<text x='"<<left<<"' y='"<<baseline<<"'>"<<text<<"</text>";
 }
+
+void svg_rect(double x, double y, double width, double height,string stroke, string fill)
+{
+    cout<< "<rect x='"<<x<<"' y='"<<y<<"' width='"<<width<<"' height='"<<height<<"' stroke='"<<stroke<< "' fill='"<<fill<<"'/>";
+}
+
+void show_histogram_svg(const vector<size_t>& bins, size_t& number_count)
+{
+    const size_t MAX_ASTERISK=30;
+    const auto IMAGE_WIDTH = 400;
+    const auto IMAGE_HEIGHT = 300;
+    const auto TEXT_LEFT = 20;
+    const auto TEXT_BASELINE = 20;
+    const auto TEXT_WIDTH = 50;
+    const auto BIN_HEIGHT = 30;
+    const auto BLOCK_WIDTH = 10;
+    const auto WIDTH_TO_PROCENT = 370;
+    svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
+    double top = 0;
+    unsigned max_count=0;
+    for (size_t b : bins) /* мы присваиваем значение количества элементов */
+    {
+        if(max_count<b)
+            max_count=b;
+    }
+    for (size_t bin : bins)
+    {
+        size_t height=30;
+        if(max_count>MAX_ASTERISK) /* Если количество будет больше 35, то уменьшаем масштаб*/
+            height=MAX_ASTERISK*((static_cast<double>(bin))/max_count); /* это для того,чтобы было дробное число , получаем, используя "static_cast<double>"*/
+        else
+        {
+            height=bin;
+        }
+        height = BLOCK_WIDTH * height;
+        svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
+        svg_rect(TEXT_WIDTH, top, height, BIN_HEIGHT, "black", "yellow");
+        top += BIN_HEIGHT;
+    }
+    svg_end();
+}
+
+
 
 int main()
 {
@@ -146,6 +149,6 @@ int main()
 
 
      const auto bins=make_histogram(numbers, max, min, bin_count);
-     show_histogram_text(bins);
+     show_histogram_svg(bins,number_count);
     return 0;
 }
