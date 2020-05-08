@@ -3,6 +3,7 @@
 #include <conio.h>
 #include "histogram.h"
 #include "svg.h"
+#include <curl/curl.h>
 
 using namespace std;
 
@@ -67,6 +68,7 @@ return bins;
 
 int main()
 {
+    curl_global_init(CURL_GLOBAL_ALL);
 const auto Input=read_input(cin, true);
 const auto bins = make_histogram (Input);
 show_histogram_svg(bins,Input.bin_count);
