@@ -1,6 +1,26 @@
 #include "histogram.h"
 
 #include <cassert>
+#include "histogram.h"
+#include "block_width.h"
+#include <cassert>
+
+void
+test_1homework_3()
+{
+    double BLOCK_WIDTH=2;
+    int flag=1;
+    block_width(BLOCK_WIDTH, flag);
+    assert(flag == 1);
+}
+void
+test_2homework_30()
+{
+    double BLOCK_WIDTH=40;
+    int flag=1;
+    block_width(BLOCK_WIDTH, flag);
+    assert(flag == 1);
+}
 
 void
 test_positive() {
@@ -48,7 +68,10 @@ test_nul()
 }
 
 int
-main() {
+main()
+{
+    test_1homework_3();
+    test_2homework_30();
     test_positive();
     test_negative();
     test_same();
