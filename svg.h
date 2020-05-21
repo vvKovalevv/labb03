@@ -15,4 +15,5 @@ void show_histogram_svg(const vector<size_t> bins, size_t number_count);
 
 
 
-#endif // SVG_H_INCLUDED
+
+
