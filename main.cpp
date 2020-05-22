@@ -43,7 +43,7 @@ make_histogram(const vector <double> &numbers,double &max, double &min, size_t &
 
 int main()
 {
-    printf("WinVersion  %x\n", GetVersion());
+   /* printf("WinVersion  %x\n", GetVersion());
     printf("WinVersion  %u\n", GetVersion());
 
     DWORD mask = 0x0000ffff;
@@ -63,8 +63,14 @@ if ((info & 0x40000000) == 0)
   DWORD build = platform;
   printf("Windows build is %u.\n", build);
 }
+*/
+char system[MAX_COMPUTERNAME_LENGTH + 1];
 
-    size_t number_count;
+    DWORD Size = sizeof(system);
+    GetComputerNameA(system, &Size);
+    printf("System: %s", system);
+
+  /*  size_t number_count;
 
     cerr << "Enter number count: ";
 
@@ -82,6 +88,6 @@ if ((info & 0x40000000) == 0)
 
 
     const auto bins=make_histogram(numbers, max, min, bin_count);
-    show_histogram_svg(bins,number_count);
+    show_histogram_svg(bins,number_count);*/
     return 0;
 }
