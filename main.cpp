@@ -1,7 +1,9 @@
 #include <iostream>
-#include "histogram.h"
 #include <vector>
+#include <string>
+#include "histogram.h"
 #include "svg.h"
+#include <cstdio>
 #include <windows.h>
 using namespace std;
 
@@ -64,13 +66,13 @@ if ((info & 0x40000000) == 0)
   printf("Windows build is %u.\n", build);
 }
 */
-char system[MAX_COMPUTERNAME_LENGTH + 1];
+/*char system[MAX_COMPUTERNAME_LENGTH + 1];
 
     DWORD Size = sizeof(system);
     GetComputerNameA(system, &Size);
-    printf("System: %s", system);
+    printf("System: %s", system);*/
 
-  /*  size_t number_count;
+   size_t number_count;
 
     cerr << "Enter number count: ";
 
@@ -88,6 +90,6 @@ char system[MAX_COMPUTERNAME_LENGTH + 1];
 
 
     const auto bins=make_histogram(numbers, max, min, bin_count);
-    show_histogram_svg(bins,number_count);*/
+    show_histogram_svg(bins,number_count);
     return 0;
 }
