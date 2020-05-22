@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1590155474 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.cpp
+	"svg.h"
+	"histogram.h"
+	<vector>
+	<string>
+	<iostream>
+
+1590155420 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.h
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+
+1590155456 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.cpp
+	<vector>
+	<windows.h>
+	<iostream>
+	<string>
+	<sstream>
+	"histogram.h"
+
+1590154519 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.h
+	<vector>
+
+1590155082 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"histogram.h"
+	"svg.h"
+	<cstdio>
+	<windows.h>
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curlver.h
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\easy.h
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\multi.h
+	"curl.h"
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\urlapi.h
+	"curl.h"
+
+1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\typecheck-gcc.h
+
