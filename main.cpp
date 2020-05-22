@@ -2,6 +2,7 @@
 #include "histogram.h"
 #include <vector>
 #include "svg.h"
+#include <cstdio>
 using namespace std;
 
 const size_t SCREEN_WIDTH = 80;
@@ -42,7 +43,11 @@ make_histogram(const vector <double> &numbers,double &max, double &min, size_t &
 
 int main()
 {
-
+    const char* name = "Commander Shepard";
+    int year = 2154;
+    printf("%s was born in %d.\n", name, year);
+    printf("n = %08x\n", 0x1234568);
+    return 0;
     size_t number_count;
 
     cerr << "Enter number count: ";
