@@ -57,7 +57,12 @@ int main()
     printf("Windows 16x version is %x.\n", version);
     printf("Windows major version is %u.\n", version_major);
     printf("Windows minor version is %u.\n", version_minor);
-    printf("build %u.\n", platform);
+    printf("build is %u.\n", platform);
+if ((info & 0x40000000) == 0)
+{
+  DWORD build = platform;
+  printf("Windows build is %u.\n", build);
+}
 
     size_t number_count;
 
