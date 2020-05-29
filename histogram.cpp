@@ -5,18 +5,23 @@
 using namespace std;
 
 
-void find_minmax (const vector<double>& numbers, double& min, double& max) {
-    if (numbers.size() != 0)
+void find_minmax (const vector<double>& numbers, double& min, double& max)
+{
+    unsigned int n=numbers.size();
+    if(n!=0)
     {
         min = numbers[0];
         max = numbers[0];
-        for (double number : numbers) {
-        if (number < min) {
-            min = number;
-        }
-        if (number > max) {
-            max = number;
-        }
+        for (double number : numbers)
+        {
+            if (number < min)
+            {
+                min = number;
+            }
+            if (number > max)
+            {
+                max = number;
+            }
         }
     }
 
