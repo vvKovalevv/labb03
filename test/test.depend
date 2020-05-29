@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1590684276 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\block_width.cpp
+	"block_width.h"
+	<iostream>
+	<vector>
+
+1590164736 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\block_width.h
+	<vector>
+	<iostream>
+
+1590164740 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\test.cpp
+	"histogram.h"
+	<cassert>
+	"histogram.h"
+	"block_width.h"
+	<cassert>
+
+1590679053 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.h
+	<vector>
+
+1590684276 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.cpp
+	<vector>
+	<iostream>
+	"histogram.h"
+
