@@ -1,7 +1,7 @@
 #include "block_width.h"
 #include <iostream>
 using namespace std;
-void block_width(double &BLOCK_WIDTH, int flag)
+void block_width(double &BLOCK_WIDTH, int &flag)
 {
 
     while (flag==1)

@@ -1,18 +1,28 @@
 # depslib dependency file v1.0
-1590155474 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.cpp
+1591110042 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.cpp
+	"svg.h"
+	<vector>
+	<iostream>
 	"svg.h"
 	"histogram.h"
 	<vector>
 	<string>
 	<iostream>
+	"block_width.h"
 
-1590155420 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.h
+1591106589 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\svg.h
+	<iostream>
+	<vector>
+	"string"
 	<iostream>
 	<string>
 	<sstream>
 	<vector>
 
-1590155456 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.cpp
+1591103587 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.cpp
+	<vector>
+	<iostream>
+	"histogram.h"
 	<vector>
 	<windows.h>
 	<iostream>
@@ -20,19 +30,25 @@
 	<sstream>
 	"histogram.h"
 
-1590154519 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.h
-	<vector>
-
-1590155082 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\main.cpp
+1591117943 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\histogram.h
 	<iostream>
 	<vector>
+	<string>
+	<sstream>
+
+1591117421 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\main.cpp
+	<iostream>
+	<vector>
+	<conio.h>
+	<curl/curl.h>
+	<sstream>
 	<string>
 	"histogram.h"
 	"svg.h"
 	<cstdio>
 	<windows.h>
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curl.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curl.h
 	"curlver.h"
 	"system.h"
 	<stdio.h>
@@ -51,9 +67,9 @@
 	"urlapi.h"
 	"typecheck-gcc.h"
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curlver.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\curlver.h
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\system.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\system.h
 	<winsock2.h>
 	<windows.h>
 	<ws2tcpip.h>
@@ -61,13 +77,21 @@
 	<sys/socket.h>
 	<sys/poll.h>
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\easy.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\easy.h
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\multi.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\multi.h
 	"curl.h"
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\urlapi.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\urlapi.h
 	"curl.h"
 
-1588941766 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\typecheck-gcc.h
+1590751336 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\curl\include\curl\typecheck-gcc.h
+
+1591109934 source:c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\block_width.cpp
+	"block_width.h"
+	<iostream>
+
+1591109934 c:\users\admin\desktop\ËÀÁÛ_2ÑÅÌ\3ëàáà\labb03\block_width.h
+	<vector>
+	<iostream>
 
